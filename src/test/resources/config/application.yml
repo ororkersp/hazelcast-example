@@ -19,6 +19,8 @@ spring:
         name: hazelcast
     jackson:
         serialization.write_dates_as_timestamps: false
+    cache:
+        type: simple
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
         url: jdbc:h2:mem:hazelcast;DB_CLOSE_DELAY=-1
@@ -86,7 +88,7 @@ jhipster:
     security:
         authentication:
             jwt:
-                secret: afa908f88d03544b4fa9d7cf7b7dcdfe5162741d
+                secret: 12f41bd87833841ccf50252bcf160df3b29d6703
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
